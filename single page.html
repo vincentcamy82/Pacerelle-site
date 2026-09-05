@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sélectionner votre jeu</title>
+  <style>
+    /* Configuration de la page */
+    body {
+      background-color: #000000;
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 40px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    h1 {
+      margin-bottom: 30px;
+      font-size: 1.8rem;
+      text-transform: uppercase;
+      text-align: center;
+      letter-spacing: 1.9px;
+    }
+
+    /* Carte de jeu (environ 10cm x 5cm sur écran desktop standard) */
+    .game-card {
+      display: block;
+      width: 80%;
+      height: auto;
+      border-radius: 15px;
+      overflow: hidden;
+      position: relative;
+      text-decoration: none;
+      box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border: 1px solid #333;
+      margin-top: 100px;
+    }
+
+    .game-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 25px rgba(255, 255, 255, 0.25);
+    }
+
+    .game-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    /* Calque optionnel pour afficher le nom du jeu par-dessus l'image */
+    .game-title {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 12px;
+      background: linear-gradient(transparent, rgba(0, 0, 0, 0.85));
+      color: #ffffff;
+      font-weight: bold;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Sélectionner votre jeu</h1>
+
+  <a href="https://murder-final.vercel.app/" target="_blank" class="game-card">
+    <img src="C:\Users\vince\Desktop\Images\affiche passerelle.png" alt="Aperçu du jeu">
+    <div class="game-title">Murder-Party 2026</div>
+  </a>
+
+  <script>
+    // Script JS pour de la logique future si besoin
+    console.log("Page de sélection chargée.");
+  </script>
+
+</body>
+</html>
